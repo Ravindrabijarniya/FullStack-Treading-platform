@@ -159,60 +159,16 @@ Usage
 
 6. Chatbot: Ask crypto-related questions to the AI assistant
 
-Database Schema
-![Database Schema Diagram]
+🔮 Future Enhancements
+🧠 AI Market Prediction
 
-Key Tables:
+📱 Mobile App (iOS & Android)
 
- 1. users - User account information
+🏆 Leaderboards & Community Trading
 
- 2. wallets - Crypto wallet balances
+🔄 More Exchange Integrations
 
- 3. transactions - Trade history
-
- 4. payment_details - Bank account information
-
- 5. market_data - Cryptocurrency market information
-
-AI Integration
--The platform integrates Gemini AI to power the chatbot feature:
-
--Processes natural language queries about cryptocurrencies
-
--Provides real-time price and market cap information
-
--Offers trend analysis based on historical data
-
--Can answer complex questions about market conditions
-
-https://Home-ChatBot.png
-
-Screenshots
-Comprehensive Market View
-https://Home-Page.png
-
-Intuitive Trading Interface
-https://BuySell-Page.png
-
-Detailed Coin Analytics
-https://Coin-Page.png
-
-Secure Payment Management
-https://Payment-Detail-Page.png
-
-User Profile Management
-https://Profile-Page.png
-
-Future Enhancements
- 1. Advanced Trading Options: Limit orders, stop-loss, etc.
-
- 2. Mobile Application: iOS and Android native apps
-
- 3. Social Features: User communities and leaderboards
-
- 4. More Exchanges: Integration with additional crypto exchanges
-
- 5. AI Predictions: Enhanced market prediction models
+🛡️ Advanced Trade Options (limit orders, stop-loss, etc.)
 
 Contributing
 We welcome contributions! Please follow these steps:
@@ -240,5 +196,5 @@ npm run dev
 Trading - Revolutionizing cryptocurrency trading with AI-powered insights and seamless user experience.
 
 Made with ❤️ by Ravindra Bijarniya
-📫 LinkedIn
-📫 Email
+🔗 LinkedIn
+📧 Email: ravindrabijarniya123@gmail.com
