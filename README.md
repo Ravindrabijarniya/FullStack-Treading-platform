@@ -1,4 +1,3 @@
-Trading - Full Stack Cryptocurrency Trading Platform
 
 # FullStack Treading Platform 💹
 
