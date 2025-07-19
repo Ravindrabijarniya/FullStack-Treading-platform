@@ -107,9 +107,6 @@ AI-Powered Chatbot
 
 ---
 
-## 📂 Project Structure
-
-
 
 Technology Stack
 Frontend
