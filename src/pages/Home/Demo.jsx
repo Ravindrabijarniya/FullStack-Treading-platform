@@ -1,16 +1,26 @@
-import React from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React from "react";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
-const StockChart = () => {
-  // Sample data
-  const data = [
-    { date: '2024-01-30', close: 187.87 },
-    { date: '2024-01-26', close: 187.42 },
-    { date: '2024-01-19', close: 171.48 },
-    { date: '2024-01-12', close: 165.80 },
-    { date: '2024-01-05', close: 159.16 },
-    { date: '2023-12-29', close: 163.55 }
-  ];
+const StockChart = ({ chartData }) => {
+  // Format CoinGecko data for recharts
+  const data = chartData
+    ? chartData.map(([timestamp, price]) => ({
+        date: new Date(timestamp).toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+        }),
+        close: price,
+      }))
+    : [];
 
   return (
     <div className="stock-chart">

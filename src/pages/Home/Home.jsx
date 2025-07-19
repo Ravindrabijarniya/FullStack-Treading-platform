@@ -109,7 +109,7 @@ const Home = () => {
     <div className="relative">
       <div className="lg:flex ">
         <div className="lg:w-[50%] border-r">
-          <div className="p-3 flex items-center gap-4 ">
+          <div className="p-2 flex items-center gap-3 ">
             <Button
               variant={category == "all" ? "default" : "outline"}
               onClick={() => setCategory("all")}
@@ -124,8 +124,6 @@ const Home = () => {
             >
               Top 50
             </Button>
-            
-           
           </div>
           <AssetTable
             category={category}
@@ -192,16 +190,16 @@ const Home = () => {
           )}
         </div>
 
-        <div className="hidden lg:block lg:w-[50%] p-5">
-          <StockChart coinId={"bitcoin"} />
-          <div className="flex gap-5 items-center">
+        <div className="hidden lg:block lg:w-[50%] p-0">
+          <StockChart coinId={"bitcoin"} chartData={coin.marketChart.data} />
+          <div className="flex gap-0 items-center">
             <div>
               <Avatar>
                 <AvatarImage src={coin.coinDetails?.image?.large} />
               </Avatar>
             </div>
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-0">
                 <p>{coin.coinDetails?.symbol?.toUpperCase()}</p>
                 <DotIcon className="text-gray-400" />
                 <p className="text-gray-400">{coin.coinDetails?.name}</p>
@@ -237,7 +235,7 @@ const Home = () => {
       <section className="absolute bottom-5 right-5 z-40 flex flex-col justify-end items-end gap-2">
         {isBotRelease && (
           <div className="rounded-md w-[20rem]  md:w-[25rem] lg:w-[25rem] h-[70vh] bg-slate-900">
-            <div className="flex justify-between items-center border-b px-6 h-[12%]">
+            <div className="flex justify-between items-center border-b px-6 h-[8%]">
               <p>Chat Bot</p>
               <Button onClick={handleBotRelease} size="icon" variant="ghost">
                 <Cross1Icon />
@@ -245,19 +243,13 @@ const Home = () => {
             </div>
 
             <div className="h-[76%]  flex flex-col overflow-y-auto  gap-5 px-5 py-2 scroll-container">
-            <div
-                 
-                  
-                  className={`${ "self-start"
-                  } pb-5 w-auto`}
-                >
-                  <div className="justify-end self-end px-5 py-2 rounded-md bg-slate-800 w-auto">
-                      {`hi, ${auth.user?.fullName}`}
-                      <p>you can ask crypto related any question</p>
-                      <p>like, price, market cap extra...</p>
-                    </div>
-                  
+              <div className={`${"self-start"} pb-5 w-auto`}>
+                <div className="justify-end self-end px-5 py-2 rounded-md bg-slate-800 w-auto">
+                  {`hi, ${auth.user?.fullName}`}
+                  <p>you can ask crypto related any question</p>
+                  <p>like, price, market cap extra...</p>
                 </div>
+              </div>
               {chatBot.messages.map((item, index) => (
                 <div
                   ref={chatContainerRef}
@@ -266,7 +258,6 @@ const Home = () => {
                     item.role == "user" ? "self-end" : "self-start"
                   } pb-5 w-auto`}
                 >
-                 
                   {item.role == "user" ? (
                     <div className="justify-end self-end px-5 py-2 rounded-full bg-slate-800 w-auto">
                       {item.prompt}
@@ -298,19 +289,15 @@ const Home = () => {
           onClick={handleBotRelease}
           className="relative w-[10rem] cursor-pointer group"
         >
-          <Button  className="w-full h-[3rem] gap-2 items-center">
-            
+          <Button className="w-full h-[3rem] gap-2 items-center">
             <MessageCircle
-            fill=""
-            className="fill-[#1e293b] -rotate-[90deg] stroke-none group-hover:fill-[#1a1a1a] "
-            size={30}
-          />
-          
-          <span className=" text-2xl">
-            Chat Bot
-          </span>
+              fill=""
+              className="fill-[#1e293b] -rotate-[90deg] stroke-none group-hover:fill-[#1a1a1a] "
+              size={30}
+            />
+
+            <span className=" text-2xl">Chat Bot</span>
           </Button>
-          
         </div>
       </section>
     </div>

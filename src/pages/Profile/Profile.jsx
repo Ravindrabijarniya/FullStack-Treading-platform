@@ -42,7 +42,7 @@ const Profile = () => {
                 </div>
                 <div className="flex">
                   <p className="w-[9rem]">Full Name : </p>
-                  <p className="text-gray-500">{"code with zosh"} </p>
+                  <p className="text-gray-500">{"Ravi"} </p>
                 </div>
                 <div className="flex">
                   <p className="w-[9rem]">Date Of Birth : </p>
@@ -56,14 +56,14 @@ const Profile = () => {
               <div className="space-y-7">
                 <div className="flex">
                   <p className="w-[9rem]">Address : </p>
-                  <p className="text-gray-500">{"code with zosh"} </p>
+                  <p className="text-gray-500">{"Rajasthan"} </p>
                 </div>
                 <div className="flex">
                   <p className="w-[9rem]">City : </p>
-                  <p className="text-gray-500">{"mumbai"} </p>
+                  <p className="text-gray-500">{"Sikar"} </p>
                 </div>
                 <div className="flex">
-                  <p className="w-[9rem]">Postcode : </p>
+                  <p className="w-[9rem]">PinCode : </p>
                   <p className="text-gray-500">{345020} </p>
                 </div>
                 <div className="flex">
@@ -165,7 +165,7 @@ const Profile = () => {
               </div>
               <div className="flex items-center">
                 <p className="w-[8rem]">Mobile :</p>
-                <p>+918987667899</p>
+                <p>+919999999999</p>
               </div>
               <div>
                 <Dialog>
