@@ -1,10 +1,17 @@
 Trading - Full Stack Cryptocurrency Trading Platform
 
-https://Home-Page.png
+# FullStack Treading Platform 💹
 
-Project Overview
-Trading is a comprehensive cryptocurrency trading platform that allows users to track market trends, execute trades, manage their portfolio, and interact with an AI-powered chatbot for real-time market insights. The platform provides a seamless experience for both novice and experienced traders with intuitive UI and robust backend services.
+This is a full-stack cryptocurrency trading platform built with **React.js** for the frontend and **Spring Boot** for the backend (in another repo). It offers features such as authentication, live coin data, wallet tracking, and transaction management with a clean and modern UI.
 
+---
+
+## 🌐 Live Demo
+**Coming Soon**
+
+---
+
+## 📸 Screenshots
 Key Features
 User Authentication
 -Secure login and registration system
@@ -12,25 +19,75 @@ User Authentication
 -Password recovery functionality
 
 -Two-step verification (2FA) for enhanced security
-https://Login-page.png https://Login-Error.png https://Register-page.png
 
-Trading Dashboard
--Real-time cryptocurrency price tracking
 
--Market trends visualization (1D, 1W, 1M, 3M, 6M, 1Y)
+### 1. 📝 Register Page
+![Register](assets/Register-page.png)
 
--Buy/Sell interface with market order execution
+---
 
-https://BuySell-Page.png https://Coin-Page.png
+### 2. 🔐 Login Page
+![Login](assets/Login-page.png)
 
+---
+
+### 3. ❌ Login Error Page
+![Login Error](assets/Login-Error.png)
+
+---
+
+### 4. 🏠 Home Page
+![Home](assets/Home-Page.png)
+
+---
+
+### 5. 🤖 Home Page with ChatBot
+![ChatBot](assets/Home-ChatBot.png)
+
+---
+
+### 6. 📚 Sidebar Navigation
+![Sidebar](assets/SideBar.png)
+
+---
+
+### 7. 📈 Coin Details Page
+![Coin Page](assets/Coin-Page.png)
+
+---
+
+### 8. 👛 Wallet Page
+![Wallet](assets/Wallet-Page.png)
+
+---
 Portfolio Management
 -Wallet balance tracking
 
 -Transaction history
 
 -Payment details management
+### 9. 💳 Payment Detail Page
+![Payment Detail](assets/Payment-Detail-Page.png)
 
-https://Wallet-Page.png https://Payment-Detail-Page.png
+---
+User Profile
+-Personal information management
+
+-Account security settings
+
+-Profile customization
+
+
+
+### 10. 👤 Profile Page
+![Profile](assets/Profile-Page.png)
+
+---
+
+### 11. 🔁 Buy/Sell Page
+![BuySell](assets/BuySell-Page.png)
+
+---
 
 AI-Powered Chatbot
 -Gemini AI integration for crypto-related queries
@@ -39,16 +96,21 @@ AI-Powered Chatbot
 
 -Natural language processing for user queries
 
-https://Home-ChatBot.png
 
-User Profile
--Personal information management
+## 🚀 Tech Stack
 
--Account security settings
+- **Frontend**: React.js, TailwindCSS, ShadCN
+- **Backend**: Spring Boot (separate repository)
+- **Database**: MySQL
+- **Authentication**: JWT
+- **State Management**: React Context API
+- **API**: CoinGecko for live market data
 
--Profile customization
+---
 
-https://Profile-Page.png
+## 📂 Project Structure
+
+
 
 Technology Stack
 Frontend
@@ -169,4 +231,18 @@ We welcome contributions! Please follow these steps:
 
  5. Open a Pull Request
 
+
+
+## 🛠️ Setup Instructions
+
+```bash
+git clone https://github.com/Ravindrabijarniya/FullStack-Treading-platform.git
+cd FullStack-Treading-platform
+npm install
+npm run dev
+
 Trading - Revolutionizing cryptocurrency trading with AI-powered insights and seamless user experience.
+
+Made with ❤️ by Ravindra Bijarniya
+📫 LinkedIn
+📫 Email
